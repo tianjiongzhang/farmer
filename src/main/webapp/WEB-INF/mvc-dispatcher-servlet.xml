@@ -30,14 +30,13 @@
         </property>
     </bean>
 
-    <!--write persistence config-->
-    <bean id="writeJpaVendor"
+    <bean id="jpaVendor"
           class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
         <property name="showSql" value="true"/>
         <property name="generateDdl" value="true"/>
     </bean>
 
-    <bean id="writeDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource " destroy-method="close">
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource " destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
         <property name="jdbcUrl" value="jdbc:mysql://192.168.36.10:3306/pebms"/>
         <property name="user" value="farmer"/>
@@ -50,10 +49,10 @@
         <property name="testConnectionOnCheckout" value="true"/>
     </bean>
 
-    <bean id="writeEntityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="persistenceUnitManager" ref="persistenceUnitManager" />
         <property name="persistenceUnitName" value="mainPersistenceUnit"/>
-        <property name="jpaVendorAdapter" ref="writeJpaVendor" />
+        <property name="jpaVendorAdapter" ref="jpaVendor" />
         <property name="loadTimeWeaver">
             <bean class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver" />
         </property>
@@ -62,17 +61,17 @@
         </property>
     </bean>
 
-    <bean id="writeTransactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
-        <property name="entityManagerFactory" ref="writeEntityManagerFactory"/>
-        <qualifier value="writeEm" />
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+        <qualifier value="em" />
         <property name="jpaDialect">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaDialect" />
         </property>
     </bean>
 
     <jpa:repositories base-package="com.farmer.baton.repo"
-                      entity-manager-factory-ref="writeEntityManagerFactory"
-                      transaction-manager-ref="writeTransactionManager" />
+                      entity-manager-factory-ref="entityManagerFactory"
+                      transaction-manager-ref="transactionManager" />
 
-    <tx:annotation-driven transaction-manager="writeTransactionManager"/>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
 </beans>

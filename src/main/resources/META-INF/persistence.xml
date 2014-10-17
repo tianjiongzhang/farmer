@@ -5,7 +5,7 @@
              http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
     <persistence-unit name="mainPersistenceUnit" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <non-jta-data-source>writeDataSource</non-jta-data-source>
+        <non-jta-data-source>dataSource</non-jta-data-source>
         <class>com.farmer.baton.model.Farmer</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
