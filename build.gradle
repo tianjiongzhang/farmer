@@ -12,6 +12,8 @@ jettyRun {
     httpPort = 9898
 }
 
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
 repositories {
     maven {
         url "http://maven.oschina.net/content/groups/public/"
