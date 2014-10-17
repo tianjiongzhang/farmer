@@ -8,13 +8,8 @@
         <non-jta-data-source>dataSource</non-jta-data-source>
         <class>com.farmer.baton.model.Farmer</class>
         <properties>
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.36.10:3306/pebms" />
-            <property name="javax.persistence.jdbc.user" value="famer" />
-            <property name="javax.persistence.jdbc.password" value="famer" />
 
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
-            <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.hbm2ddl.auto" value="update" />
         </properties>
     </persistence-unit>
