@@ -6,6 +6,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,9 @@ import static java.lang.String.format;
 public class FarmerController {
     private static final Log log = LogFactory.getLog(FarmerController.class);
     private final ObjectMapper mapper = new ObjectMapper();
+
+    @Value("${name}")
+    private String name;
 
     @Autowired
     private FarmerRepository farmerRepository;
