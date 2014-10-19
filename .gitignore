@@ -18,6 +18,7 @@ bin
 .gradle
 build
 .vagrant
+.DS_Store
 
 # special file
 
