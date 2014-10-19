@@ -22,9 +22,9 @@ Vagrant是一个虚拟机管理工具，使用它可以很方便地管理虚拟�
   
 ```shell
 // CentOS或Redhat系统
-$ yum install git 
+$ sudo yum install git 
 // Ubuntu或Debian系统
-$ apt-get install git
+$ sudo apt-get install git
 ```
   
 如果是Windows系统，请到这里[下载][git-download]安装文件进行安装。  

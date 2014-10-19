@@ -3,6 +3,7 @@ var pebms_app = angular.module('pebms', ['ngRoute']);
 pebms_app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/farmer', { templateUrl: 'resources/pages/farmer.html', controller: FarmerController})
+        .when('/show', { templateUrl: 'resources/pages/show.html', controller: ShowController})
         .otherwise({redirectTo: '/home'});
 }]);
 
