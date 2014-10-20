@@ -61,18 +61,17 @@ $ vagrant up
 * 环境验证，在浏览器中输入`http://192.168.36.10/phpmyadmin/`，用户名密码为: `farmer/farmer`，成功的话登陆可以进到我们搭建好的DB环境。  
   
 ### 初始化工程
-进到工程目录，执行以下命令获得工程文件，然后就可以通过IDE加载工程文件了。
+
+* 进到工程目录，执行以下命令获得工程文件，然后就可以通过IDE加载工程文件了。
 
 ```shell
 $ gradle eclipse //如果你用eclipse，可以使用这个命令得到eclipse工程文件
 $ gradle idea //如果你用Intellij IDEA，可以使用这个命令得到IDEA工程文件
 ```
   
-运行应用: `$ gradle clean jettyrun`  
-打包: `$ gradle clean build`  
+* 运行应用: `$ gradle clean jettyrun`，执行命令之后，在浏览器中打开`http://localhost:9898/pebms`就访问应用了。    
+* 打包: `$ gradle clean build`, 执行命令后在`build/libs`目录下可以看到war文件。  
   
-运行`jettyrun`之后，在浏览器中打开`http://localhost:9898/pebms`就访问应用了。  
-
 ## 其他资源
 **[Semantic UI][semantic-ui]**   
 **[Vagrant][vagrant]**  
