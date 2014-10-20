@@ -74,7 +74,12 @@ $ gradle idea //如果你用Intellij IDEA，可以使用这个命令得到IDEA�
 运行`jettyrun`之后，在浏览器中打开`http://localhost:9898/pebms`就访问应用了。  
 
 ## 其他资源
-#### [semantic-ui][semantic-ui]
+### [Semantic UI][semantic-ui]
+### [Vagrant][vagrant]
+### [Gradle][gradle]
+### [Vagrant][vagrant]
+### [Angular JS][angular-js]
+### [Git][git]
 
 [virtual-box-download]: https://www.virtualbox.org/wiki/Downloads
 [vagrant-box-download]: https://www.vagrantup.com/downloads.html
@@ -82,3 +87,7 @@ $ gradle idea //如果你用Intellij IDEA，可以使用这个命令得到IDEA�
 [gradle-download]: https://services.gradle.org/distributions/gradle-2.1-all.zip
 [box-download]: http://jianguoyun.com/p/Dfw3mgwQquHlBRiL9Qk
 [semantic-ui]: http://semantic-ui.com/
+[gradle]: http://www.gradle.org/
+[vagrant]: https://www.vagrantup.com/
+[angular-js]: https://angularjs.org/
+[git]: http://git-scm.com/

@@ -10,5 +10,5 @@ import java.util.List;
 
 public interface FarmerRepository extends JpaRepository<Farmer, Long>, JpaSpecificationExecutor<Farmer> {
     @Query("select f from farmers f where f.age = :age")
-    List<Farmer> findByBlogIdAndWebsite(@Param("age") int age);
+    List<Farmer> findByAge(@Param("age") int age);
 }

@@ -34,7 +34,7 @@ public class FarmerController {
         farmerRepository.save(new Farmer("张三", 18));
         farmerRepository.save(new Farmer("李四", 100));
 
-        log.debug("farmer: " + farmerRepository.findByBlogIdAndWebsite(18));
+        log.debug("farmer: " + farmerRepository.findByAge(18));
         log.debug("create farmer finish");
     }
 

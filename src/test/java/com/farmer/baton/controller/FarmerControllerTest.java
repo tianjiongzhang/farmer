@@ -34,12 +34,12 @@ public class FarmerControllerTest {
     @Test
     public void should_create_farmers_correct() throws Exception {
         when(farmerRepository.save(any(Farmer.class))).thenReturn(null);
-        when(farmerRepository.findByBlogIdAndWebsite(anyInt())).thenReturn(null);
+        when(farmerRepository.findByAge(anyInt())).thenReturn(null);
 
         farmerController.create();
 
         verify(farmerRepository, times(2)).save(any(Farmer.class));
-        verify(farmerRepository).findByBlogIdAndWebsite(anyInt());
+        verify(farmerRepository).findByAge(anyInt());
     }
 
     @Test
