@@ -84,7 +84,7 @@ $ gradle idea //如果你用Intellij IDEA，可以使用这个命令得到IDEA�
 [vagrant-box-download]: https://www.vagrantup.com/downloads.html
 [git-download]: http://git-scm.com/download/win
 [gradle-download]: https://services.gradle.org/distributions/gradle-2.1-all.zip
-[box-download]: http://jianguoyun.com/p/Dfw3mgwQquHlBRiL9Qk
+[box-download]: http://pan.baidu.com/s/1dDiYNsd
 [semantic-ui]: http://semantic-ui.com/
 [gradle]: http://www.gradle.org/
 [vagrant]: https://www.vagrantup.com/
