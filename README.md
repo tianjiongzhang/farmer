@@ -51,12 +51,14 @@ git clone https://farmer-dev1@bitbucket.org/farmer-dev1/pebms.git
 ### 安装DB环境
   
 * 下载box文件: [这里][box-download]
-* 进到工程目录，执行以下命令。
+* **进到工程目录**，执行以下命令。
   
 ```shell
 $ vagrant box add --name pebms box.file.path(刚下载的box文件路径)    
 $ vagrant up
 ```
+  
+`请注意，vagrant box add 可以在工程目录外，vagrant up必须在工程目录内执行`  
   
 * 环境验证，在浏览器中输入`http://192.168.36.10/phpmyadmin/`，用户名密码为: `farmer/farmer`，成功的话登陆可以进到我们搭建好的DB环境。  
   
