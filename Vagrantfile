@@ -11,8 +11,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       dev.vm.hostname = "dev-env"
       dev.vm.network :private_network, ip: "192.168.36.10"
       dev.vm.provider :virtualbox do |vb|
-        vb.memory = 1024
-        vb.cpus = 2
+        vb.memory = 512
+        vb.cpus = 1
       end
   end
  end
