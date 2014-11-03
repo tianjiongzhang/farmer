@@ -1,0 +1,313 @@
+body,div,span,p,a,ul,li,input,button{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input,button{
+    outline: none;
+    border: none;
+}
+.font12{
+    font-size: 12px;
+}
+.font14{
+    font-size: 14px;
+}
+.font16{
+    font-size: 16px;
+}
+
+ .form-main{
+            margin: 25px;
+            background: #fff;
+            font-family: "simsun";
+            border: 1px #72b5ed solid;
+            overflow:hidden;
+            background-color: #4cadff;
+        }
+        .form-content{
+            padding: 0 0 0 135px;
+        }
+        .form-content-left{
+            width: 135px;
+            background-color: #4cadff;
+            margin-left: -135px;
+            float: left;
+           /* padding-bottom:60px;*/
+        }
+        .form-content-left>li{
+            width: 135px;
+            height: 116px;
+            color: #fff;
+            border-bottom: 1px #4cadff solid;
+            border-top: 1px #4cadff solid;
+        }
+        .form-content-left>li.current{
+        		/* background: url("../../images/report/item_hover.png") no-repeat center center; */
+        		background-color:#78c0fe;
+        }
+        .form-content-left>li:hover{
+            cursor: pointer;
+            color: #2b72ad;
+        }
+        .form-name{
+            padding: 75px 0 0 0;
+            display: block;
+            text-align: center;
+        }
+        .customer-ico:before{
+            background: url("../../images/report/customer.png") no-repeat center 30%;
+        }
+        .market-ico:before{
+            background: url("../../images/report/market_form.png") no-repeat center 30%;
+        }
+        .service-ico:before{
+            background: url("../../images/report/service_form.png") no-repeat center 30%;
+        }
+        .marketing-ico:before{
+            background: url("../../images/report/marketing_form.png") no-repeat center 30%;
+        }
+        .task-ico:before{
+            background: url("../../images/report/task_form.png") no-repeat center 30%;
+        }
+        .customer-ico.current:before, .customer-ico:hover:before{
+           background: url("../../images/report/customer_hover.png") no-repeat center 30%;
+        }
+        .market-ico.current:before, .market-ico:hover:before{
+            background: url("../../images/report/market_hover.png") no-repeat center 30%;
+        }
+        .service-ico.current:before, .service-ico:hover:before{
+            background: url("../../images/report/server_hover.png") no-repeat center 30%;
+        }
+        .marketing-ico.current:before, .marketing-ico:hover:before{
+            background: url("../../images/report/marketing_hover.png") no-repeat center 30%;
+        }
+        .task-ico.current:before, .task-ico:hover:before{
+            background: url("../../images/report/task_hover.png") no-repeat center 30%;
+        }
+      
+        .form-content-right{
+            width: 100%;
+            /*height: 589px;*/
+            /*border-right: 1px #72b5ed solid;
+            border-bottom: 1px #72b5ed solid;*/
+        }
+        .right-header-function{
+            /*padding: 15px 50px 15px 15px;*/
+            padding: 15px 15px 0 15px;
+            color: #4c4c4c;
+            background: #fff;
+        }
+		.right-header-function .func-tables{
+					overflow:hidden;
+        }
+        .arrow{
+            width: 30px;
+            height: 30px;
+            background: url("../../images/report/open.png")  center center no-repeat;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            cursor:pointer;
+        }
+        .arrow:hover{
+            background: url("../../images/report/open_h.png")  center center no-repeat;
+        }
+        .arrow.active{
+        	background: url("../../images/report/open_h.png")  center center no-repeat;
+        }
+        .close{
+            background: url("../../images/report/close.png") center center no-repeat;
+        }
+        .close:hover{
+        	background: url("../../images/report/close_h.png") center center no-repeat;
+        }
+        .close.active{
+        	background: url("../../images/report/close_h.png") center center no-repeat;
+        }
+        .function-name{
+            padding: 0 10px;
+            border:1px #fff solid;
+            display: inline-block;
+            line-height: 28px;
+            margin-left: 15px;
+            /*margin-top: 10px;*/
+            float:left;
+            border-radius: 3px;
+        }
+        .function-name:hover{
+            color: #4cadff;
+            background: #fff;
+            border: 1px #4cadff solid;
+            border-radius:3px;
+            cursor: pointer;
+        }
+        .function-name.current{
+            color: #4cadff;
+            background: #fff;
+            border: 1px #4cadff solid;
+            border-radius: 3px;
+        }
+        .screen-info-div{
+            /*padding: 0 10px;*/
+        }
+        .screen-info{
+            padding: 15px 10px 15px 153px;
+            /* height: 135px; */
+            background: #fff;
+            border-bottom: 1px #d2d7db solid;
+        }
+        .screen-ico{
+            width: 125px;
+            /*height: 135px;
+            margin-left: -153px;*/
+            float: left;
+            border-right: 1px #d2d7db solid;
+        }
+        .ml140{
+        	margin-left: -140px;
+        }
+        .screen-input-div{
+           /* padding:0 0 10px 0;*/
+            color: #4c4c4c;
+        }
+        .show-screen{
+            margin: 0 auto;
+        }
+        .show-screen li.item{
+            height: 45px;
+            display:inline-block;
+        }
+        .text-blue{
+            color: #4cadff;
+        }
+        .ico{
+            padding: 0 0 0 35px;
+            background: url("../../images/report/screen.png") no-repeat -3px 1px;
+            line-height: 30px;
+            display: inline-block;
+            /*margin-left: 10px;*/
+        }
+        .market_ico{
+            background: url("../../images/report/market_small.png") no-repeat -3px -3px;
+        }
+        .form-ico{
+            padding: 0 0 0 35px;
+            background: url("../../images/report/form_ico.png") no-repeat 0 -3px;
+            line-height: 30px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        input{
+            width: 200px;
+            height: 26px;
+            border: 1px #c1c1c1 solid;
+        }
+        .time-input{
+            width: 150px;
+            height: 26px;
+        }
+        .relative{
+            position: relative;
+        }
+        .float-right{
+            float: right;
+        }
+        .mr2{
+            margin-right: 2px;
+            line-height: 28px;
+        }
+        .mr2:after{
+            clear: both;
+        }
+        .addr{
+            width: 115px;
+            height: 26px;
+        }
+        .inpu-text{
+            width: 255px;
+            height: 26px;
+        }
+        .form-img{
+            padding: 20px 15px;
+            background-color: #fff;
+        }
+        .form-img-header{
+            height: 30px;
+            margin-bottom:20px;
+        }
+        .load-form{
+           margin-right:20px ;
+        }
+        .but{
+            width: 115px;
+            height: 30px;
+            background-color:#79d763;
+            border-radius: 2px;
+            outline: none;
+            border: none;
+            color: #fff;
+        }
+        .but:hover{
+            cursor: pointer;
+        }
+        .create-form{
+            background-color: #4cadff;
+        }
+        .form{
+            width: 100%;
+            padding: 10px 0;
+            min-height: 248px;
+        }
+        .form-content-left li{
+        	position:relative;
+        	cursor:pointer;
+        }
+		.form-content-left li.current, .form-content-left li:hover{
+        	color: #2b72ad;
+        }        
+        .form-content-left li:before{
+        		content:'';
+        		position:absolute;
+        		left:0;
+        		top:0;
+        		width:100%;
+        		height:100%;
+        }
+        .ui-h40{
+        	height:40px;
+        }
+        .clearfix:after{
+        	content:'';
+        	clear:both;
+        	overflow:hidden;
+        	display:block;
+        	height:0;	
+        }
+        .field-name{
+        	float:left;
+        	line-height:30px;
+        	width:70px;
+        	text-align:right;
+        	padding-right:10px;
+        }
+        .filed-input{
+        	float:left;
+        }
+        .dropdown{
+        	float:left;
+        }
+        .line_bg{
+        	width:100%;
+        	height:1px;
+        	background: url("../../images/report/bg.png") repeat-x bottom left;
+        }
+        .left-float{
+        	float:left;
+        }
+        

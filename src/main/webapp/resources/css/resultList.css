@@ -1,0 +1,11 @@
+.orderColumnClass {
+	color: #fff;
+	cursor: hand;
+}
+.Table01 tr .tdLink a{color:#606060;text-decoration:underline;}
+.Table01 tr:hover .tdLink a{color:#5b9fe4;}
+.Table01 tr td{
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		overflow:hidden;
+}

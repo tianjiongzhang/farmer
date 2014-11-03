@@ -1,0 +1,48 @@
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+/* tipbar */
+.tipbar,.tipbox,.progress li,.tipword,.tipbar .arrow,.tipBarword,.tipSwitch,.tipboxNextbtn{background-image:url(guide.png);background-repeat:no-repeat;}
+#searchTip{overflow:hidden;}
+.tipbox{width:464px;position:relative;height:226px;display:none;background-position:0px -134px;}
+.tipbox .tipboxBtn{position:absolute;display:inline-block;width:34px;height:34px;left:363px;top:4px;cursor:pointer;}
+.tipboxNextbtn{position:absolute;display:inline-block;width:67px;height:26px;left:264px;top:113px;cursor:pointer;background-position:-530px 0px;}
+.progress{position:absolute;left:210px;top:120px;width:50px;height:9px;line-height:9px;font-size:0px;}
+.progress li{float:left;width:9px;height:9px;margin-right:6px;font-size:0px;background-position:-832px 0px;}
+.progress .on{background-position:-841px 0px;}
+.tipword{position:absolute;}
+#step1{z-index:1000;}
+#step1 .tipword{width:260px;height:48px;left:200px;top:37px;background-position:-260px 0px;}
+#step2 .tipword{width:231px;height:48px;left:186px;top:37px;background-position:0px -68px;}
+#step2{width:464px;height:226px;background-position:0px -134px;}
+#step2 .tipboxBtn{left:363px;top:4px;}
+#step2 .tipboxNextbtn{left:255px;top:113px;background-position:-530px 0px;}
+
+#step3 .tipword{width:197px;height:49px;left:193px;top:32px;background-position:-598px 0px;}
+#step3{width:464px;height:226px;background-position:0px -134px;}
+#step3 .tipboxBtn{left:363px;top:4px;}
+#step3 .tipboxNextbtn{left:255px;top:113px;background-position:-530px -26px;}
+
+.tipbarwrap{position:absolute;width:100%;height:1px;left:0px;top:0px;z-index:1000;background-color:transparent;}
+.tipbardiv{position:relative;width:900px;height:1px;margin:0px auto;}
+.tipbar{display:none;position:absolute;z-index:1000;}
+.tipbarInner{position:relative;}
+.tipbar .arrow{width:65px;height:68px;background-position:0px 0px;position:absolute;}
+.clear{font-size:0px;line-height:0px;height:0px;overflow:hidden;}
+
+#tipbar1{width:106px;height:62px;background-position:-260px -48px;left:-190px;top:0px;}
+#tipbar1 .arrow{right:-20px;bottom:-55px;}
+#tipbar1 .tipbarInner{width:106px;height:106px;}
+
+#tipbar2{width:150px;height:74px;background-position:-696px -237px; right:64px; top:120px;}
+#tipbar2 .arrow{right:151px;top:95px;background-position:-65px 0px;}
+#tipbar2 .tipbarInner{width:240px;height:66px;}
+
+#tipbar3{width: 179px;height: 162px;background-position: -671px -52px;right:878px;top: 592px;}
+#tipbar3 .arrow{left:246px;top:-110px;background-position:-130px 0px;}
+#tipbar3 .tipbarInner{width:240px;height:66px;}
+
+.notip{position:absolute;left:340px;top:116px;}
+#notip{vertical-align:middle;}
+.notip label{vertical-align:middle;color:#0c5685;}
+.tipSwitch{width:80px;height:26px;cursor:pointer;background-position:-512px -212px;cursor:pointer;position:absolute;top:48px;right:185px;}

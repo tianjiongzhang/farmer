@@ -1,0 +1,133 @@
+        *{margin:0; padding:0;}
+        .main{
+            width: 100%;
+            background-color: #FFFFFF;
+        }
+
+            /*header css*/
+        .login_head{
+            width:960px;
+            height:65px;
+            background-color: #fff;
+            margin: 0 auto;
+            clear:both;
+            overflow:hidden;
+        }
+        .log_logo{
+            float:left;
+            padding: 14px 50px 0 0;
+        }
+        .login_head span{
+            display:block;
+            float:left;
+            padding-left:40px;
+            color:#5f6366;
+            font-size:12px;
+            line-height:65px;
+        }
+        .login_head span.log_phone{background:url(../images/images-1/index-04-18-a_06.gif) no-repeat 20px center;}
+        .login_head span.log_qq{background:url(../images/images-1/index-04-18-a_09.gif) no-repeat 20px center;}
+        .log_nav{float:right; padding-top:22px;}
+        .log_nav li{
+            float:left;
+            padding-left:10px;
+            list-style: none;
+        }
+        .log_nav li a{
+            display:block;
+            padding:0 30px;
+            height:43px;
+            font:16px/43px "微软雅黑";
+            color:#717171;
+            border-radius:5px 5px 0 0;
+        }
+        .log_nav li a:hover,.log_nav li a.current{
+            background:#eb6100;
+            color:#FFF;
+        }
+            /*---------404error-------------------------------------------------------------------------*/
+        .remind404_main{
+            width: 100%;
+            height: 625px;
+            background: url("../images/error_bc1.png") no-repeat 180px 100px;
+            border-top: 1px solid #e2e2e2;
+            box-shadow:0 2px 3px 0px #e2e2e2 inset;
+            -webkit-box-shadow:0 2px 3px 0px #e2e2e2 inset ;
+            -moz-box-shadow:0 2px 3px 0px #e2e2e2 inset;
+        }
+        .remind404_main p{
+            width: 300px;
+            font-size: 14px;
+            display: inline-block;
+            color: #555555;
+            line-height: 24px;
+            font-family: "微软雅黑";
+            margin-top: 40px;
+            margin-left: 180px;
+            overflow: hidden;
+        }
+        .remind404_main span{
+            font:24px/60px "微软雅黑";
+            color: #fe9d45;
+            width: 80%;
+            height: 30px;
+            display: inline-block;
+            margin-top: 250px;
+            margin-left: 180px;
+        }
+        .go_login{
+            width: 245px;
+            height: 40px;
+            outline: none;
+            border: 1px #3780c9 solid;
+            background-color: #4995e1;
+            cursor: pointer;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            top:70px;
+            left: -305px;
+        }
+        .go_login:hover{
+            background-color: #307dca; border: 1px #2268ae solid;
+        }
+
+/*---------404error-------------------------------------------------------------------------*/
+        
+.forbid_inner,.error_inner,.error2_inner{
+    width: 750px;
+    height: 550px;
+	margin:0 auto;
+}
+.forbid_inner h1,.error_inner h1,.error2_inner h1{
+	padding-top:150px;
+    color: #fe9d45;
+    height: 60px;
+	font:24px/60px "微软雅黑";
+}
+
+.forbid_inner p,.error_inner p,.error2_inner p{
+    width: 300px;
+    font-size: 14px;
+    color: #555555;
+    line-height: 24px;
+    font-family: "微软雅黑";
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.errorbtn{
+	display:block;
+	width:240px;
+	height:38px;
+	border:1px solid #3780c9;
+	background:#4995e1;
+	color:#FFFFFF;
+	text-align:center;
+	font:16px/38px "微软雅黑";
+	margin-top:30px;
+}
+.errorbtn:hover{background-color: #307dca; border: 1px #2268ae solid;}
+/*---------错误error 无头和底-------------------------------------------------------------------------*/
+.error_inner{background: url("../images/error_bc.png") no-repeat right center;}
