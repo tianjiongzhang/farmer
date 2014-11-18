@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 系统配置文件 -->	
+	<context:property-placeholder location="classpath:jdbc.properties" />
+	
+	<!-- 数据库连接池 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="${jdbc.driverClass}" />
+		<property name="jdbcUrl" value="${jdbc.jdbcUrl}" />
+		<property name="user" value="${jdbc.user}" />
+		<property name="password" value="${jdbc.password}" />
+		<!-- 连接池初始连接数，取值应在minPoolSize与maxPoolSize之间，默认值：3 -->
+		<property name="initialPoolSize" value="${jdbc.initialPoolSize}" />
+		<!-- 连接池中保留的最小连接数，默认值：10 -->
+		<property name="minPoolSize" value="${jdbc.minPoolSize}" />
+		<!-- 连接池中保留的最大连接数，默认值：15 -->
+		<property name="maxPoolSize" value="${jdbc.maxPoolSize}" />
+		<!-- 最大空闲时间（单位：秒）内未使用的连接将被丢弃，若取值为0则永不丢弃，默认值：0 -->
+		<property name="maxIdleTime" value="${jdbc.maxIdleTime}" />
+		<!-- 检查连接池中空闲连接的间隔时间，默认值：0 -->
+		<property name="idleConnectionTestPeriod" value="${jdbc.idleConnectionTestPeriod}" />
+		<!-- 所有连接测试都执行的测试语句 -->
+		<property name="preferredTestQuery" value="${jdbc.preferredTestQuery}" />
+	</bean>
+
+</beans>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/wnxBase/!svn/ver/22/trunk/src/com/woniuxing/user/model
+END
+SocialDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/wnxBase/!svn/ver/26/trunk/src/com/woniuxing/user/model/SocialDetails.java
+END
+Portrait.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wnxBase/!svn/ver/25/trunk/src/com/woniuxing/user/model/Portrait.java
+END
+PersonalDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/wnxBase/!svn/ver/28/trunk/src/com/woniuxing/user/model/PersonalDetails.java
+END
+ContactWay.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wnxBase/!svn/ver/25/trunk/src/com/woniuxing/user/model/ContactWay.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/wnxBase/!svn/ver/26/trunk/src/com/woniuxing/user/model/User.java
+END

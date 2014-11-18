@@ -1,0 +1,46 @@
+10
+
+dir
+22
+http://sz-xushengyong.aspire.aspire-tech.com:9090/svn/wnxBase/trunk/src/com/woniuxing/authority
+http://sz-xushengyong.aspire.aspire-tech.com:9090/svn/wnxBase
+
+
+
+2011-08-21T15:02:38.093750Z
+22
+xushengyong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+93562412-f558-1342-b006-bd55eef69972
+
+repository
+dir
+
+model
+dir
+
+service
+dir
+
+controller
+dir
+
+utility
+dir
+
+filter
+dir
+

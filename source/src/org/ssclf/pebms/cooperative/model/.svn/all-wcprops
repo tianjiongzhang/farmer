@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/wnxBase/!svn/ver/22/trunk/src/com/woniuxing/authority/model
+END
+Operation.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/wnxBase/!svn/ver/25/trunk/src/com/woniuxing/authority/model/Operation.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/wnxBase/!svn/ver/25/trunk/src/com/woniuxing/authority/model/Role.java
+END
+Resource.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/wnxBase/!svn/ver/25/trunk/src/com/woniuxing/authority/model/Resource.java
+END

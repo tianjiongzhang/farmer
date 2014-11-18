@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/wnxBase/!svn/ver/20/trunk/src/com/woniuxing/base/model
+END
+WNXImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wnxBase/!svn/ver/25/trunk/src/com/woniuxing/base/model/WNXImage.java
+END
+WNXObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/wnxBase/!svn/ver/25/trunk/src/com/woniuxing/base/model/WNXObject.java
+END
+WNXCatalog.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/wnxBase/!svn/ver/25/trunk/src/com/woniuxing/base/model/WNXCatalog.java
+END
+WNXEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/wnxBase/!svn/ver/25/trunk/src/com/woniuxing/base/model/WNXEntity.java
+END
+WNXValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/wnxBase/!svn/ver/25/trunk/src/com/woniuxing/base/model/WNXValue.java
+END

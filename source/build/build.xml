@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE project>
+
+<project name="PEBMS" default="all" basedir=".">
+
+	<property environment="env" />
+	<property name="src.dir" value="../src" />
+	<property name="web.dir" value="../web" />
+	<property name="doc.dir" value="../doc" />
+	<property name="war.file" value="pebms.war" />
+	<property name="build.dir" value="../build" />	
+	<property name="dist.dir" value="../dist" />
+	
+	<property name="class.path" value="${web.dir}/WEB-INF/classes" />
+	
+	<path id="build.path">
+		<pathelement location="${class.path}" />
+		<fileset dir="${web.dir}/WEB-INF/lib" includes="**/*.jar" />
+	</path>
+
+	<!-- 清除历史文件 -->
+	<target name="clean">
+		<echo>正在清除历史文件...</echo>
+		<delete dir="${class.path}" verbose="true" failonerror="false" />
+		<echo level="info">清除完毕！</echo>
+	</target>
+
+	<!-- 创建发布目录 -->
+	<target name="init" depends="clean">
+	
+	</target>
+
+	<!--========================== 编译java源文件 ========================== -->
+	<target name="compile">
+		<mkdir dir="${web.dir}/WEB-INF/classes" />
+		<echo>编译源文件...</echo>
+		<javac fork="true" deprecation="on" classpathref="build.path"
+			srcdir="${TMS.src}" includes="**" optimize="off"
+			destdir="${web.dir}/WEB-INF/classes" nowarn="true" debug="true"
+			debuglevel="lines,vars,source">
+		</javac>
+		<echo>复制配置文件...</echo>
+		<copy todir="${web.dir}/WEB-INF/classes">
+			<fileset dir="${TMS.src}" excludes="**/*.java" />
+		</copy>
+	</target>
+
+	<!--========================== 打包发布程序 ========================== -->
+	<target name="war" depends="compile">
+		<war warfile="${TMS.deploy}/${war.file}" webxml="${web.dir}/WEB-INF/web.xml">
+			<lib dir="${web.dir}/WEB-INF/lib" />
+			<classes dir="${web.dir}/WEB-INF/classes" />
+			<fileset dir="${web.dir}" />
+		</war>
+	</target>
+
+	<!--========================== 编译入口 ========================== -->
+	<target name="all" depends="war">
+		<mkdir dir="${releaseNotes.dest}" />
+		<mkdir dir="${db.dest}" />
+		<mkdir dir="${lib.dest}" />
+		<mkdir dir="${tools.dest}" />
+
+		<copy todir="${releaseNotes.dest}">
+			<fileset dir="${TMS.releaseNotes}/" />
+		</copy>
+		<copy todir="${db.dest}">
+			<fileset dir="${TMS.dbscript}/" />
+		</copy>
+		<copy todir="${lib.dest}">
+			<fileset dir="${TMS.lib}/" />
+		</copy>
+		<copy todir="${tools.dest}">
+			<fileset dir="${TMS.tools}/" />
+		</copy>
+		<echo level="info">编译完毕</echo>
+	</target>
+
+</project>
