@@ -5,15 +5,14 @@
 #
 # 用户表：LC_USER
 #
-drop table if exists LC_USER;
-create table LC_USER (
-  ID bigint(15) not null auto_increment,
-  DELETED varchar(1) not null,   
-  CREATOR_ID bigint(15) not null,
-  CREATE_DATE datetime not null,
-  STATUS varchar(2) not null,    
-  EMAIL varchar(48) not null,
-  NICKNAME varchar(32) not null,  
-  PASSWORD varchar(16) not null,
-  primary key (ID)
-);
+DROP TABLE IF EXISTS LC_USER;
+CREATE TABLE LC_USER (
+  ID BIGINT(15) not NULL AUTO_INCREMENT COMMENT '用户ID',
+  DELETED VARCHAR(1)   COMMENT '删除标志',   
+  CREATOR_ID BIGINT(15)   COMMENT '创建人',
+  CREATE_DATE DATETIME  COMMENT '状态',    
+  EMAIL VARCHAR(48)   COMMENT '电子邮箱',
+  NICKNAME VARCHAR(32)   COMMENT '用户名',  
+  PASSWORD VARCHAR(16)   COMMENT '密码',
+  PRIMARY KEY (ID)
+) COMMENT '用户定义表';
