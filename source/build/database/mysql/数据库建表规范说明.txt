@@ -1,0 +1,7 @@
+﻿1. 表命名：LC或者LD开头，LC表示业务表，LD表示基表，表各个单词之间用“_”分隔开;
+2. 字段命名：采用英文单词或者缩写的英文单词，各单词间采用“_”分隔开；
+3. 表主键字段类型：BIGINT(15) NOT NULL AUTO_INCREMENT，日期类型用DATETIME，字符类型用VARCHAR
+4. 表在代码库的命名方式:表名_序号_操作类型，如：lc_project_1_create_tablel;
+5. 表新增列在新的脚本中添加，代码库命名同表的命名方式如：lc_project_2_alert_table;
+6. 表和表字段需要加上注释;
+7. 编码格式采用UTF-8
