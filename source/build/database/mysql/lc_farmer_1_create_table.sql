@@ -25,6 +25,11 @@ CREATE TABLE LC_FARMER (
   current_CropsAcre int(5)    COMMENT '当前主要农作物亩数',
   plan_CropsDetail varchar(20)    COMMENT '计划的种植农作物描述',
   plan_CropsAcre varchar(5)   COMMENT '计划种植或者养殖的农作物亩数',
+  STATUS VARCHAR(10) COMMENT '状态',
+  CREATOR_ID BIGINT(15) COMMENT '创建人',
+  CREATE_DATE DATETIME COMMENT '创建时间',
+  UPDATE_ID BIGINT(15) COMMENT '更新人',
+  UPDATE_DATE DATETIME COMMENT '更新时间',    
   PRIMARY KEY (farmer_Id)
 ) COMMENT '农户表';
 
