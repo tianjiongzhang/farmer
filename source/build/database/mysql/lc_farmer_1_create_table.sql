@@ -3,8 +3,8 @@
 #########################################################################
 
 #
-# 农户定义表：LC_PROJECT
-#
+# 农户定义表： LC_FARMER
+#########################################################################
 DROP TABLE IF EXISTS LC_FARMER;
 CREATE TABLE LC_FARMER (
   farmer_Id BIGINT(10) AUTO_INCREMENT COMMENT '主键，农户ID',
