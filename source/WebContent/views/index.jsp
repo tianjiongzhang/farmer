@@ -15,9 +15,12 @@
 <link rel="stylesheet" type="text/css" href="css/base.css" />
 <link rel="stylesheet" type="text/css" href="css/common.css" />
 
+
+
 <script type="text/javascript" src="js/external/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/external/jquery-ui-1.10.4.custom.min.js"></script>
 <script type="text/javascript" src="js/dynamic-tab.js" ></script>
+
 
 </head>
 <body>
@@ -79,7 +82,7 @@
 						<a href="javascript:" onclick="addTab('systemVolunteer', '<fmt:message key='portal.navi.system.volunteer' />', '<c:url value='/views/volunteer/list.jsp' />', true);">
 							<fmt:message key="portal.navi.system.volunteer" />
 						</a>
-						<a href="javascript:" onclick="addTab('systemDonator', '<fmt:message key='portal.navi.system.donator' />', '<c:url value='/views/system/donator_list.jsp' />', true);">
+						<a href="javascript:" onclick="addTab('systemDonator', '<fmt:message key='portal.navi.system.donator' />', '<c:url value='/views/benefactor/benefactor_list.html' />', true);">
 							<fmt:message key="portal.navi.system.donator" />
 						</a>
 					</dd>

@@ -61,12 +61,6 @@ public class User extends BaseEntity {
     @Size(min = 6, max = 16, message = "密码最少 {min}，最大 {max}个字符！")
     @Column(name = "PASSWORD", nullable = false)
     private String password;
-    
-    /**
-     * 头像ID
-     */
-    @Column(name = "PORTRAIT_ID")
-    private Long portraitId;
 
     /**
      * @return the email
