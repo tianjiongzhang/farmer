@@ -69,6 +69,9 @@
 						<a href="javascript:" onclick="addTab('volunteerProject', '<fmt:message key='portal.navi.volunteer.project' />', '<c:url value='/views/project/list.jsp' />', true);">
 							<fmt:message key="portal.navi.volunteer.project" />
 						</a>
+						<a href="javascript:" onclick="addTab('volunteerFarmer', '<fmt:message key='portal.navi.volunteer.farmer' />', '<c:url value='/service/farmers' />', true);">
+							<fmt:message key="portal.navi.volunteer.farmer" />
+						</a>
 					</dd>
 				</dl>
 				<dl class="oh">
